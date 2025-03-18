@@ -1,14 +1,13 @@
 programa
 {
-	
+
 	funcao inicio()
 	{
 		inteiro opcao
 		inteiro T, a
 		
 		escreva("Seleciona a Lei de Kepler: \n")
-		escreva("A base para suas leis foi a observação do planeta Marte!\n\n")
-		
+				
 		escreva("1ª Lei - Órbitas Elípticas \n")
 		escreva("2ª Lei - Áreas iguais \n")
 		escreva("3ª Lei - Lei Harmónica \n")
@@ -37,22 +36,25 @@ programa
 				
 			caso 3:
 				escreva("A 3ª Lei de Kepler diz que: \n")
-				escreva("The square of the orbital period (T) of a planet is directly proportional to the cube of the semi-major axis (a) of its orbit.\n")
-
+				
 				escreva("A raíz quadrada do cubo do período de órbita de um planeta em relação ao tempo que leva a girar o sol .\n")
-				escreva("é proporconal ao cubo da media da distância ao redor do sol .\n\n")
+				escreva("é proporconal ao cubo da média da distância ao redor do sol .\n\n")
 				
 				escreva(" ------------------------------------------------------------------------------ \n")
-                    escreva("Lei dos períodos: Os quadrados dos períodos  \n")
+                    		escreva("Lei dos períodos: Os quadrados dos períodos  \n")
 				escreva("de revolução dos planetas são proporcionais aos\n")
 				escreva("cubos dos semi-eixos maiores das respectivas órbitas Simbolicamente (T^2)/(R^2) = constante \n\n")
 				escreva(" ------------------------------------------------------------------------------ \n")
-				escreva("inserir os dados para efectuar o cálculo")
 				
-				escreva("Enter the semi-major axis (a) in astronomical units (AU):")
+				escreva("o quadrado do período de qualquer planeta é proporcional ao cubo do semieixo maior de sua órbita")
+				escreva("\n \n Inserir os dados para efectuar o cálculo")
+
+				escreva("\n ")
+				
+				escreva("Insira o semi-eixo maior (a) em unidades astronômicas (AU - Astronómic Unit):")
 				leia(a)
 
-				escreva("\n Enter the orbital period (T) in Earth years:")
+				escreva("\n Insira o período orbital (T) em anos terrestres:")
 				leia(T)
 
 				inteiro calculated_T_squared = T * T
@@ -62,16 +64,18 @@ programa
         			escreva("\n a^3 (Semi-major axis cubed) = ", calculated_a_cubed)
 
         			se (calculated_T_squared == calculated_a_cubed)
-					escreva("\n The values satisfy Kepler's Third Law.")
+					escreva("\n Os valores satisfazem a Terceira Lei de Kepler.")
         			senao
-        				escreva("\n The values do NOT satisfy Kepler's Third Law.")
+        				escreva("\n Os valores não satisfazem a Terceira Lei de Kepler")
 				pare
 
 			caso 4:
 				escreva("Vida e obra do cientísta KEPLER \n")
+				escreva("A base para suas leis foi a observação do planeta Marte!\n\n")
 				escreva("A teoria de Copérnico permitiu que o astrônomo Johannes Kepler, natural de Praga,  \n")
 				escreva("enunciasse, do ponto de vista cinemático, as leis que regem os movimentos dos planetas. \n")
 				escreva("As duas primeiras leis foram publicadas em 1609 enquanto a terceira só apareceu em 1618. \n")
+			
 			caso contrario: escreva("Opção incorreta! \n")
 		}
 	}

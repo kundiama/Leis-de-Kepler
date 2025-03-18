@@ -14,6 +14,7 @@ int main(int argc, char *argv[]) {
 	scanf("%d", &opcao);
 	
 	switch(opcao){
+		//chamar cada função de acordo a lei escolhida
 		case 1: PrimeiraLei(); break;
 		case 2: SegundaLei(); break;
 		case 3: TerceiraLei(); break;
@@ -41,7 +42,7 @@ void Menu() {
 void PrimeiraLei() {
     printf("A 1ª Lei de Kepler diz que: A órbita de um planeta é uma elipse\n");
     printf("com o SOL como centro de tudo.\n");
-	printf("Esta lei não precisa de cálculos numéricos!\n");
+    printf("Esta lei não precisa de cálculos numéricos!\n");
 }
 
 void SegundaLei() {
@@ -53,22 +54,40 @@ void SegundaLei() {
 
 void TerceiraLei() {
     double a, T;
-    printf("Kepler's Third Law: The square of the orbital period (T) of a planet is directly proportional to the cube of the semi-major axis (a) of its orbit.\n");
-    printf("Enter the semi-major axis (a) in astronomical units (AU): ");
+    printf("A 3ª Lei de Kepler diz que: \n");
+    printf("A raíz quadrada do cubo do período de órbita de um planeta em relação ao tempo que leva a girar o sol.\n");
+    printf("é proporconal ao cubo da média da distância ao redor do sol.\n");
+
+    printf("A raíz quadrada do cubo do período de órbita de um planeta em relação ao tempo que leva a girar o sol.\n")
+    printf("é proporconal ao cubo da média da distância ao redor do sol .\n\n")
+				
+    printf(" ------------------------------------------------------------------------------ \n")
+    printf("Lei dos períodos: Os quadrados dos períodos  \n")
+    printf("de revolução dos planetas são proporcionais aos\n")
+    printf("cubos dos semi-eixos maiores das respectivas órbitas Simbolicamente (T^2)/(R^2) = constante \n\n")
+    printf(" ------------------------------------------------------------------------------ \n")
+				
+    printf("o quadrado do período de qualquer planeta é proporcional ao cubo do semieixo maior de sua órbita")
+    printf("\n \n Inserir os dados para efectuar o cálculo")
+
+    printf("\n ")
+				
+    printf("Insira o semi-eixo maior (a) em unidades astronômicas (AU - Astronómic Unit):")
     scanf("%lf", &a);
-    printf("Enter the orbital period (T) in Earth years: ");
+
+    printf("\n Insira o período orbital (T) em anos terrestres:")
     scanf("%lf", &T);
+
+    inteiro calculated_T_squared = T * T
+    inteiro calculated_a_cubed = a * a * a
     
-    double calculated_T_squared = T * T;
-    double calculated_a_cubed = a * a * a;
-    
-    printf("T^2 (Orbital Period squared) = %.2f\n", calculated_T_squared);
-    printf("a^3 (Semi-major axis cubed) = %.2f\n", calculated_a_cubed);
+    printf("T^2 (Quadrado do período Orbital) = %.2f\n", calculated_T_squared);
+    printf("a^3 (Cubo do semi-eixo maior) = %.2f\n", calculated_a_cubed);
     
     if (calculated_T_squared == calculated_a_cubed) {
-        printf("The values satisfy Kepler's Third Law.\n");
+        printf("Os valores satisfazem a Terceira Lei de Kepler.\n");
     } else {
-        printf("The values do NOT satisfy Kepler's Third Law.\n");
+        printf("Os valores não satisfazem a Terceira Lei de Kepler.\n");
     }
 }
 
