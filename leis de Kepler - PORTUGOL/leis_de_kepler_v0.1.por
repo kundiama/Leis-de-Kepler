@@ -37,7 +37,7 @@ programa
 			caso 3:
 				escreva("A 3ª Lei de Kepler diz que: \n")
 				
-				escreva("A raíz quadrada do cubo do período de órbita de um planeta em relação ao tempo que leva a girar o sol .\n")
+				escreva("A raíz quadrada do cubo do período de órbita de um planeta em relação ao tempo que leva a girar o sol.\n")
 				escreva("é proporconal ao cubo da média da distância ao redor do sol .\n\n")
 				
 				escreva(" ------------------------------------------------------------------------------ \n")
@@ -85,7 +85,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 3013; 
+ * @POSICAO-CURSOR = 2486; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
